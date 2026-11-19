@@ -1,0 +1,206 @@
+<!doctype html>
+<!--
+  ============================================================
+  HOW TO EDIT THIS WEBSITE
+  ------------------------------------------------------------
+  1. Open this file in any text editor (Notepad, VS Code...).
+  2. Replace the text between the tags with your own text.
+     Look for the comments that say  EDIT  — that's your content.
+  3. Photo: put a picture named  photo.jpg  in the same folder.
+  4. CV PDF: put your CV named  cv.pdf  in the same folder.
+  5. To add an entry (job, degree, paper), copy a whole
+     <div class="entry"> ... </div> block and paste it below.
+  6. To remove a section you don't need, delete its whole
+     <section> ... </section> block.
+  Save, then refresh the page in your browser to see changes.
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: your name (shown in the browser tab) -->
+  <title>Your Name</title>
+  <meta name="description" content="Personal website and CV of Your Name">
+  <style>
+    :root {
+      --text: #1f2328;
+      --muted: #5c6370;
+      --accent: #2f5d8a;   /* change this one color to restyle the site */
+      --line: #e3e6ea;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --text: #e6e8eb; --muted: #a0a7b1; --accent: #8db8e3; --line: #30353b; --bg: #16191d; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 17px/1.6 Georgia, "Times New Roman", serif;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+    a { color: var(--accent); }
+
+    header { display: flex; gap: 32px; align-items: center; margin-bottom: 40px; }
+    .photo {
+      width: 160px; height: 160px; flex-shrink: 0; border-radius: 50%;
+      object-fit: cover; background: var(--line);
+    }
+    h1 { margin: 0 0 4px; font-size: 2.1rem; line-height: 1.2; }
+    .tagline { margin: 0 0 12px; color: var(--muted); font-size: 1.05rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: system-ui, sans-serif; font-size: .92rem; }
+    .button {
+      display: inline-block; padding: 6px 14px; border-radius: 6px;
+      background: var(--accent); color: var(--bg); text-decoration: none;
+    }
+
+    section { margin-top: 36px; }
+    h2 {
+      font: 600 .8rem/1 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 8px; margin: 0 0 16px;
+    }
+    .entry { margin-bottom: 18px; }
+    .entry-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .entry-title { font-weight: bold; }
+    .date { color: var(--muted); font-family: system-ui, sans-serif; font-size: .88rem; white-space: nowrap; }
+    .sub { color: var(--muted); font-style: italic; }
+    .entry p, .entry ul { margin: 4px 0 0; }
+    ul { padding-left: 20px; }
+    footer { margin-top: 56px; color: var(--muted); font-size: .85rem; font-family: system-ui, sans-serif; }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; text-align: center; }
+      .links { justify-content: center; }
+    }
+    @media print {
+      .button { display: none; }
+      main { padding-top: 0; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+    <!-- EDIT: put photo.jpg next to this file -->
+    <img class="photo" src="photo.jpg" alt="Photo of Your Name"
+         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23dde3ea%22/%3E%3Ccircle cx=%2250%22 cy=%2238%22 r=%2218%22 fill=%22%23aab4c0%22/%3E%3Cellipse cx=%2250%22 cy=%2290%22 rx=%2232%22 ry=%2226%22 fill=%22%23aab4c0%22/%3E%3C/svg%3E'">
+    <div>
+      <h1>Your Name</h1> <!-- EDIT -->
+      <p class="tagline">MSc in Your Field · University Name</p> <!-- EDIT -->
+      <div class="links">
+        <!-- EDIT: your links. Delete any you don't use. -->
+        <a class="button" href="cv.pdf">Download CV (PDF)</a>
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://scholar.google.com/">Google Scholar</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <!-- EDIT: 3–5 sentences. Say what you study, what you want to research, and that you're looking for a PhD. -->
+    <p>
+      I am a master's student in <em>Your Field</em> at <em>University Name</em>, interested in
+      <em>topic one</em> and <em>topic two</em>. My thesis focuses on <em>short description</em>.
+      I am currently <strong>looking for a PhD position</strong> starting in 2027, ideally in
+      <em>area or type of lab</em>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Research interests</h2>
+    <!-- EDIT -->
+    <ul>
+      <li>Research interest one</li>
+      <li>Research interest two</li>
+      <li>Research interest three</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+
+    <!-- EDIT: copy this whole block for each degree -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">MSc in Your Field</span>
+        <span class="date">2024 – 2026</span>
+      </div>
+      <div class="sub">University Name, City, Country</div>
+      <p>Thesis: “Title of your thesis” — supervised by Prof. Name. Grade/GPA if good.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">BSc in Your Field</span>
+        <span class="date">2020 – 2024</span>
+      </div>
+      <div class="sub">University Name, City, Country</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research experience</h2>
+
+    <!-- EDIT: copy this whole block for each position / project -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Research Assistant</span>
+        <span class="date">2025 – present</span>
+      </div>
+      <div class="sub">Name of Lab, University Name</div>
+      <ul>
+        <li>What you did, in one line.</li>
+        <li>What you achieved or learned.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Research Intern</span>
+        <span class="date">Summer 2024</span>
+      </div>
+      <div class="sub">Institute or Company</div>
+      <ul>
+        <li>What you did, in one line.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications &amp; presentations</h2>
+    <!-- EDIT: delete this section if you have none yet -->
+    <ul>
+      <li><strong>Your Name</strong>, Co-Author. “Paper title.” <em>Conference or Journal</em>, 2026. <a href="#">[pdf]</a></li>
+      <li>Poster: “Poster title.” <em>Event name</em>, City, 2025.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <!-- EDIT -->
+    <ul>
+      <li><strong>Lab / methods:</strong> method, method, method</li>
+      <li><strong>Programming:</strong> Python, R, …</li>
+      <li><strong>Languages:</strong> English (fluent), …</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Awards &amp; scholarships</h2>
+    <!-- EDIT: delete this section if not needed -->
+    <ul>
+      <li>Scholarship or award name, Year</li>
+    </ul>
+  </section>
+
+  <footer>
+    Last updated: November 2026 <!-- EDIT -->
+  </footer>
+
+</main>
+</body>
+</html>
